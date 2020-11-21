@@ -1,0 +1,17 @@
+.row{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+
+.imgEffect{
+    margin: 5px;
+    max-height: 120px;
+    transition: transform 450ms, opacity 450ms;
+}
+
+.imgEffect:hover{
+    transform: scale(1.08);
+    opacity: 0.8;
+}
