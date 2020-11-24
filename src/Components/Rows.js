@@ -53,13 +53,17 @@ function Rows({title, fetchURL, isLargeRow}) {
   return (
     <section className='container'>
       <h2>{title}</h2>
+      
+
+      
       <article className='row'>
-        {movies.map((movie) => (
-          <img onClick={()=>handleClick(movie)} className={`imgEffect ${isLargeRow && 'imgEffect2'}`} src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${isLargeRow ? movie.poster_path : movie.poster_path}`} alt={movie.name||movie.title} key={movie.id}/>
+          {movies.map((movie) => (
+          <img onClick={() => handleClick(movie)} className={`imgEffect ${isLargeRow && 'imgEffect2'}`} src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${isLargeRow ? movie.poster_path : movie.poster_path}`} alt={movie.name || movie.title} key={movie.id} />
         ))}
         
       </article>
       
+     
       {urlTrailer && <YouTube videoId={urlTrailer} opts={opts} />}
     </section>
   );

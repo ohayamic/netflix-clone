@@ -1,14 +1,13 @@
 import './App.css';
-import NavBar from './Components/NavBar'
 import Rows from './Components/Rows'
 import request from './Components/request'
 import Banner from './Components/Banner';
 import Footer from './Components/Footer';
-
+import'./App.css'
 function App() {
   return (
-    <div style={{ backgroundColor: "#1f211f" }}>
-      <NavBar />
+    <div className="App" style={{ backgroundColor: "#1f211f" }}>
+      
       <Banner />
       <section>
         <article>
